@@ -13,8 +13,8 @@ export class Gamescene extends Scene {
     livesLabel;
     lives;
     houndLives = 5;
-    player
-    game
+    player;
+    game;
 
     onInitialize(engine) {
 
@@ -78,7 +78,6 @@ export class Gamescene extends Scene {
                 this.player.vel.x = 300;
             }
         });
-
 
         engine.input.keyboard.on('up', (evt) => {
             if (evt.key === 'ArrowLeft' || evt.key === 'ArrowRight' || evt.key === 'a' || evt.key === 'd') {

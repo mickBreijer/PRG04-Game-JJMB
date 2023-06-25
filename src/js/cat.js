@@ -69,6 +69,7 @@ export class Cat extends Actor {
     onCollisionStart(event) {
         if (event.other instanceof Dog) {
             this.game.currentScene.decreaseLives()
+            this.vel.add(new Vector(-100, 0));
             if (this.game.currentScene.lives <= 0) {
                 this.kill();
                 this.game.currentScene.resetGame();
