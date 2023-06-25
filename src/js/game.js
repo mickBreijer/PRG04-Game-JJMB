@@ -11,7 +11,7 @@ export class Game extends Engine {
     constructor() {
         super({ width: 1920, height: 961 })
         this.start(ResourceLoader).then(() => this.startGame())
-        ResourceLoader.suppressPlayButton = false
+        ResourceLoader.suppressPlayButton = true
         this.showDebug(true)
         Physics.gravity = new Vector(0, 500)
     }
