@@ -49,7 +49,7 @@ export class Gamescene extends Scene {
         this.lives = 3;
         this.livesLabel = new Label({
             text: 'LIVES: ' + this.lives,
-            pos: new Vector(1300, 80),
+            pos: new Vector(1600, 80),
             color: Color.Red,
             font: new Font({
                 family: 'Comic Sans MS',
@@ -61,7 +61,7 @@ export class Gamescene extends Scene {
 
         const pause = new Label({
             text: 'Press P to PAUSE',
-            pos: new Vector(650, 80),
+            pos: new Vector(850, 80),
             color: Color.Red,
             font: new Font({
                 family: 'Comic Sans MS',
